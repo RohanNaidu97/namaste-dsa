@@ -1,0 +1,19 @@
+#1 If you add number to a string, the number gets converted to string and gets concatenated.
+        let firstName = "Akshay";
+        let lastName = 7;
+
+        const fullName = firstName + lastName;
+        console.log(fullName);
+
+#2 If I add 'String' in between other 2 variables will also be treated as String too.
+        let firstName = 3;
+        let lastName = 7;
+
+        const fullName = firstName + "" + lastName;
+        console.log(fullName);
+
+        let firstName = 3;
+        let lastName = 7;
+
+        const fullName = firstName + lastName;
+        console.log(fullName);
