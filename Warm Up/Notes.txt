@@ -17,3 +17,5 @@
 
         const fullName = firstName + lastName;
         console.log(fullName);
+
+#3 Use -Inifinity and Inifinity as smallest and largest value.
