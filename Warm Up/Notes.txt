@@ -26,3 +26,12 @@
 
         Objects & arrays → passed by reference (technically “reference value”)
 
+#5              Function	        What it does	                Example
+                Math.round()	        nearest integer	                4.6 → 5
+                Math.floor()	        always round down	        4.9 → 4
+                Math.ceil()	        always round up	                4.1 → 5
+                Math.abs()	        remove negative sign	        -8 → 8
+
+        Rule for Math.round():
+        decimal ≥ 0.5 → round up
+        decimal < 0.5 → round down
