@@ -35,3 +35,6 @@
         Rule for Math.round():
         decimal ≥ 0.5 → round up
         decimal < 0.5 → round down
+
+#6 Function scope uses sligthly more memory than Block scope. 
+        So, Declare variables as close as possible to where they are used.
