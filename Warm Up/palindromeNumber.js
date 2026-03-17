@@ -12,12 +12,12 @@ function palindromeNumber(x) {
         x = Math.floor(x / 10);
     }
 
-    if(xCopy === rev){
-        return true;
-    }
-    else{
-        return false;
-    }
+    // if(xCopy === rev){
+    //     return true;
+    // }
+    // else{
+    //     return false;
+    // }
 
     return xCopy === rev;
 
