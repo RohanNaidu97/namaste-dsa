@@ -11,3 +11,18 @@ var removeDuplicates = function (nums) {
 };
 
 console.log(removeDuplicates(n));
+
+
+
+//The Video's approach
+var removeDuplicates = function(nums) {
+    let x = 0;
+    for(let i =0; i<nums.length; i++){
+        if(nums[i] > nums[x]){
+            x++;
+            nums[x] = nums[i];
+        }
+    }
+
+    return (x+1);
+};
