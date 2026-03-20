@@ -21,15 +21,12 @@ console.log(maxProfit(pr));
 
 
 var maxProfit = function(prices) {
-    let minPrice = Infinity;
+    let minPrice = prices[0];
     let maxProfit = 0;
 
-    for (let price of prices) {
-        if (price < minPrice) {
-            minPrice = price;
-        } else {
-            maxProfit = Math.max(maxProfit, price - minPrice);
-        }
+    for (let i = 1; i < prices.length; i++) {
+        minPrice = Math.min(minPrice, prices[i]);
+        maxProfit = Math.max(maxProfit, prices[i] - minPrice);
     }
 
     return maxProfit;
