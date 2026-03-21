@@ -37,3 +37,47 @@ var merge = function (nums1, m, nums2, n) {
 
 
 console.log(merge(num1, p, num2, q));
+
+
+var merge = function(nums1, m, nums2, n) {
+    let newNums1 = nums1.slice(0,m);
+    let p = 0;
+    let q = 0;
+
+    for(let i=0; i < m+n; i++){
+        if( q >= n || (p<m && newNums1[p] < nums2[q])){
+            nums1[i] = newNums1[p];
+            p++;
+        }
+
+        else{
+            nums1[i] = nums2[q];
+            q++;
+        }
+    }
+};
+
+
+var merge = function (nums1, m, nums2, n) {
+    let x = m-1;
+    let y = n - 1;
+
+    for (let i = m + n - 1; i >= 0; i--){
+        if (y < 0) {
+            break;
+        }
+
+        if (nums1[x] > nums2[y] && x >= 0) {
+            nums1[i] = nums1[x];
+            x--;
+        }
+
+        else {
+            nums1[i] = nums2[y];
+            y--;
+        }
+    }
+
+    return nums1;
+
+};
