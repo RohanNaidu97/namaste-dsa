@@ -1,0 +1,8 @@
+🔼 Ascending order
+arr.sort((a, b) => a - b);
+
+🔽 Descending order
+arr.sort((a, b) => b - a);
+
+#1 const sum = nums.reduce((acc, curr) => acc + curr, 0);
+    reduce() iterates through the entire array → O(n)
