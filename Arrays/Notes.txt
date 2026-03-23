@@ -6,3 +6,7 @@ arr.sort((a, b) => b - a);
 
 #1 const sum = nums.reduce((acc, curr) => acc + curr, 0);
     reduce() iterates through the entire array → O(n)
+
+#2 const arr = [1, 2, 3, 4];
+
+    arr.includes(3); // true
