@@ -1,0 +1,20 @@
+// This function demonstrates recursion by repeatedly calling itself
+// with a smaller value until it reaches the base case (num === 0).
+// Each call prints the current number, then decrements it by 1,
+// creating a countdown from the initial value to 1.
+
+function fun(num) {
+    if (num === 0) {
+        return;
+    }
+
+    console.log(num);
+    num -= 1;
+    fun(num);
+}
+
+let a = 10;
+
+fun(a);
+
+
