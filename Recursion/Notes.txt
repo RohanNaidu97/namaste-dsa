@@ -3,18 +3,20 @@
 // Each call prints the current number, then decrements it by 1,
 // creating a countdown from the initial value to 1.
 
-function fun(num) {
-    if (num === 0) {
-        return;
-    }
+        function fun(num) {
+            if (num === 0) {
+                return;
+            }
 
-    console.log(num);
-    num -= 1;
-    fun(num);
-}
+            console.log(num);
+            num -= 1;
+            fun(num);
+        }
 
-let a = 10;
+        let a = 10;
 
-fun(a);
+        fun(a);
 
+#1 Always try to make a recursion tree before making a recursion program.
 
+#2 Another way of writing a recursion is, sum(n) = n + sum(n-1);
