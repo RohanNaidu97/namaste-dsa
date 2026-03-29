@@ -10,3 +10,9 @@ arr.sort((a, b) => b - a);
 #2 const arr = [1, 2, 3, 4];
 
     arr.includes(3); // true
+
+#3 let number = str.split("").filter(ch => ch !isNan(ch) && ch !== " ")
+
+        let numbers = s
+        .split("")                 // convert string to array
+        .filter(ch => !isNaN(ch) && ch !== " "); // keep only numeric characters
